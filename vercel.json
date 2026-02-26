@@ -1,6 +1,5 @@
 {
-  "cleanUrls": true,
-  "routes": [
-    { "src": "/", "dest": "/quotation.html" }
+  "rewrites": [
+    { "source": "/", "destination": "/quotation.html" }
   ]
 }
