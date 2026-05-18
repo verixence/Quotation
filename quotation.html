@@ -576,15 +576,111 @@
     /* ==============================================================
        RESPONSIVE
     ============================================================== */
+
+    /* Tablet */
+    @media (max-width: 960px) {
+      .main-wrap { padding: 0 14px; }
+      #quotation-preview { padding: 38px 34px; }
+    }
+
+    /* Mobile */
     @media (max-width: 768px) {
-      .main-wrap { padding: 0 10px; }
-      .card { padding: 16px 14px; }
-      #quotation-preview { padding: 28px 20px; }
-      .addr-grid { grid-template-columns: 1fr; }
-      .dh { flex-direction: column; gap: 14px; }
+      /* Header */
+      .app-header { padding: 10px 14px; gap: 10px; flex-wrap: wrap; }
+      .app-header .logo { height: 36px; }
+      .app-header .hd-text h1 { font-size: 1.1rem; }
+      .app-header .hd-text p  { display: none; }
+      .badge { font-size: .68rem; padding: 3px 9px; margin-left: auto; }
+
+      /* Layout */
+      .main-wrap { padding: 0 10px; margin: 14px auto; }
+      .card { padding: 16px 13px; border-radius: 10px; }
+      .card-title { font-size: .77rem; margin-bottom: 14px; }
+
+      /* Form grid: two columns on tablet/mobile */
+      .form-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+
+      /* Services table: smooth horizontal scroll */
+      .tbl-wrap {
+        -webkit-overflow-scrolling: touch;
+        overflow-x: auto;
+        border-radius: 6px;
+        margin: 0 -2px;
+      }
+      .svc-table { min-width: 520px; }
+
+      /* Totals: full width */
+      .totals-wrap { justify-content: stretch; }
+      .totals-box  { min-width: unset; width: 100%; }
+
+      /* Action bar: stack full width */
+      .action-bar {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+        padding: 0 2px;
+      }
+      .btn { width: 100%; justify-content: center; padding: 13px 20px; font-size: .9rem; }
+
+      /* Preview actions */
+      .preview-actions { flex-direction: column; align-items: stretch; }
+      .preview-actions .btn { width: 100%; }
+
+      /* Preview document */
+      #quotation-preview { padding: 26px 18px; }
+      .dh { flex-direction: column; gap: 12px; }
       .dh .q-meta { text-align: left; }
+      .dh .q-meta h2 { font-size: 1.55rem; letter-spacing: 2px; }
+      .dh .co-logo { height: 40px; }
+      .dh .co-info p { font-size: .76rem; }
+
+      .meta-chips { gap: 7px; }
+      .meta-chip  { font-size: .73rem; padding: 5px 10px; }
+
+      .addr-grid { grid-template-columns: 1fr; gap: 12px; }
+      .addr-box { padding: 13px 14px; }
+      .addr-box p { font-size: .79rem; }
+
       .p-pay { flex-direction: column; }
-      .sig-row { flex-direction: column; gap: 20px; }
+      .p-pay .qr-box { min-width: unset; width: 100%; }
+
+      .p-totals { justify-content: stretch; }
+      .p-totals-box { min-width: unset; width: 100%; }
+
+      .sig-row { flex-direction: column; gap: 18px; }
+      .p-terms pre { font-size: .74rem; line-height: 1.75; }
+    }
+
+    /* Small mobile */
+    @media (max-width: 480px) {
+      .app-header .logo { height: 30px; }
+      .app-header .hd-text h1 { font-size: .95rem; }
+      .badge { display: none; }
+
+      /* Single-column form on small screens */
+      .form-grid { grid-template-columns: 1fr; }
+
+      .card { padding: 13px 11px; }
+
+      .dh .q-meta h2 { font-size: 1.25rem; letter-spacing: 1.5px; }
+
+      #quotation-preview { padding: 18px 13px; }
+
+      .p-table { font-size: .74rem; }
+      .p-table thead th,
+      .p-table tbody td { padding: 8px 9px; }
+
+      .pt-row { font-size: .78rem; padding: 8px 12px; }
+      .pt-row.pt-grand .pl { font-size: .85rem; }
+      .pt-row.pt-grand .pv { font-size: .92rem; }
+
+      .svc-table { min-width: 460px; font-size: .8rem; }
+      .svc-table thead th { padding: 9px 8px; font-size: .68rem; }
+      .svc-table tbody td { padding: 7px 6px; }
+
+      .totals-inputs { grid-template-columns: auto 100px; }
+
+      .proj-banner .pt { font-size: .9rem; }
     }
 
     /* misc */
@@ -865,6 +961,9 @@ Estimated delivery timeline begins upon receipt of advance payment and all requi
 
 5. INTELLECTUAL PROPERTY
 All source code, designs, and deliverables remain the property of Verixence until full payment is received, at which point ownership transfers entirely to the client.
+
+5A. PORTFOLIO & MARKETING RIGHTS
+Verixence reserves the right to showcase, feature, and publish any work completed under this agreement — including but not limited to websites, designs, branding, social media content, and digital assets — across its portfolio, Instagram, LinkedIn, other social media platforms, promotional materials, case studies, advertisements, and any other marketing channels, without requiring further consent from the client. This right applies from the date of project completion and remains in effect indefinitely. If the client has any objections to their project being featured in Verixence's portfolio or marketing, they must raise a formal written objection to info@verixence.com prior to project completion. Objections raised after project completion or after content has already been published will be reviewed on a case-by-case basis; Verixence will make reasonable efforts to address genuine concerns but is not obligated to remove previously published content.
 
 6. THIRD-PARTY SERVICES
 Verixence is not liable for downtime, rate-limit changes, pricing adjustments, or issues arising from third-party APIs, SaaS platforms, or cloud services (e.g. OpenAI, AWS, Stripe).
