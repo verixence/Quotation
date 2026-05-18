@@ -1457,10 +1457,6 @@ function generatePreview() {
   $('preview-wrapper').style.display = 'block';
   $('pdf-btn').style.display         = '';
   $('print-btn').style.display       = '';
-  if (!isInvoice) {
-    document.getElementById('preview-wrapper').scrollIntoView({ behavior:'smooth', block:'start' });
-    showToast('✓ Preview generated', 'ok');
-  }
 }
 
 /* ── PDF DOWNLOAD ──────────────────────────────────────────────── */
